@@ -17,7 +17,6 @@ public:
     virtual bool start(IOService *provider) override;
     virtual void stop(IOService *provider) override;
     void doKernelPatch(void (^patchFunc)(void));
-    bool isLiluPatched(void *from);
 private:
 };
 
